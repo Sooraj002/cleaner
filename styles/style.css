@@ -1,58 +1,66 @@
 @font-face {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 300;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/lato/v23/S6u9w4BMUTPHh7USew8.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/lato/v23/S6u9w4BMUTPHh7USew8.ttf)
+    format("truetype");
 }
 @font-face {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/lato/v23/S6uyw4BMUTPHvxk.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/lato/v23/S6uyw4BMUTPHvxk.ttf)
+    format("truetype");
 }
 @font-face {
-  font-family: 'Playfair Display';
+  font-family: "Playfair Display";
   font-style: italic;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/playfairdisplay/v30/nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_qiTbtY.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/playfairdisplay/v30/nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_qiTbtY.ttf)
+    format("truetype");
 }
 @font-face {
-  font-family: 'Playfair Display';
+  font-family: "Playfair Display";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/playfairdisplay/v30/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKdFvUDQ.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/playfairdisplay/v30/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKdFvUDQ.ttf)
+    format("truetype");
 }
 @font-face {
-  font-family: 'Playfair Display';
+  font-family: "Playfair Display";
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/playfairdisplay/v30/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKd3vUDQ.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/playfairdisplay/v30/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKd3vUDQ.ttf)
+    format("truetype");
 }
 @font-face {
-  font-family: 'Playfair Display';
+  font-family: "Playfair Display";
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/playfairdisplay/v30/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKebukDQ.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/playfairdisplay/v30/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKebukDQ.ttf)
+    format("truetype");
 }
 @font-face {
-  font-family: 'Playfair Display';
+  font-family: "Playfair Display";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/playfairdisplay/v30/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKeiukDQ.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/playfairdisplay/v30/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKeiukDQ.ttf)
+    format("truetype");
 }
 @font-face {
-  font-family: 'Fleur De Leah';
+  font-family: "Fleur De Leah";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/fleurdeleah/v7/AYCNpXX7ftYZWLhv9UmPJTMC5vY.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/fleurdeleah/v7/AYCNpXX7ftYZWLhv9UmPJTMC5vY.ttf)
+    format("truetype");
 }
 *,
 *::before,
