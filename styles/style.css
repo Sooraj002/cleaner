@@ -4,6 +4,7 @@ body {
   --primary: #e38c87;
   --secondary: #be3831;
   --accent: #f03a30;
+  overflow-x: hidden;
 }
 
 @font-face {
