@@ -1,0 +1,781 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  border: none;
+  list-style: none;
+  font-family: @font-head-main;
+}
+
+@font-head-main: "Playfair Display", serif;
+@font-sub: "Lato", sans-serif;
+@signature-font: "Fleur De Leah", cursive;
+@bg-1: #f1ebe7;
+@bg-2: #e7ded8;
+@text-color-1: #000;
+@text-color-2: #68513f;
+@text-color-3: #333;
+@body-lr-padding: 8%;
+@transition:0.4s ease;
+
+p {
+  line-height: 1.5;
+}
+
+p,
+span,
+a {
+  font-family: @font-sub;
+}
+
+body {
+  background-color: @bg-1;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+nav {
+  padding: 0 @body-lr-padding;
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+
+    .logo {
+      a {
+        color: @text-color-1;
+        text-transform: capitalize;
+      }
+    }
+    .navlinks {
+      ul {
+        display: flex;
+        li {
+          margin: 0 2rem;
+          a {
+            color: @text-color-3;
+            font-size: 1.2rem;
+            font-family: @font-head-main;
+            transition: @transition;
+            &:hover {
+              color: @text-color-1;
+            }
+          }
+        }
+      }
+    }
+    .cart {
+      display: flex;
+      align-items: center;
+      a {
+        span {
+          padding: 6px 11px;
+          border-radius: 50%;
+          background-color: @bg-2;
+        }
+      }
+    }
+  }
+
+  .navheading {
+    margin-top: 8%;
+    display: flex;
+    justify-content: space-between;
+    .navtext {
+      width: 50%;
+      h1 {
+        text-transform: capitalize;
+        font-size: 5rem;
+      }
+      .text {
+        margin-bottom: 4rem;
+      }
+      a {
+        width: 9rem;
+        padding: 0.8rem 1.3rem;
+        color: @text-color-2;
+        border: 0.01rem solid @text-color-2;
+        border-radius: 60%;
+        transition: @transition;
+        &:hover {
+          background-color: @text-color-2;
+          color: @bg-1;
+        }
+      }
+    }
+    .navimg {
+      width: 50%;
+      img {
+        border-radius: 1rem;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+.skincare {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3% @body-lr-padding;
+
+  .left {
+    width: 25%;
+    img:nth-child(1) {
+      width: 50%;
+      justify-self: center;
+      margin-bottom: 20rem;
+    }
+    img {
+      width: 80%;
+      border-radius: 2rem;
+    }
+  }
+  .middle {
+    width: 50%;
+    text-align: center;
+    padding: 0 1rem;
+
+    h1 {
+      font-size: 4rem;
+    }
+    h6 {
+      font-size: 6rem;
+      font-family: @signature-font;
+      font-weight: 400;
+      text-transform: capitalize;
+      color: @text-color-2;
+    }
+    p {
+      margin: 3rem 0 5rem;
+    }
+    a {
+      padding: 0.8rem 1.5rem;
+      color: @text-color-2;
+      border: 0.01rem solid @text-color-2;
+      border-radius: 50%;
+      transition: @transition;
+      &:hover {
+        background-color: @text-color-2;
+        color: @bg-1;
+      }
+    }
+  }
+  .right {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    img:nth-child(1) {
+      width: 50%;
+    }
+    img:nth-child(2) {
+      width: 70%;
+      align-self: flex-start;
+      margin: 3rem 0 8rem;
+    }
+    img {
+      width: 60%;
+      border-radius: 2rem;
+      margin: 2rem 0;
+    }
+  }
+}
+
+.skinCareVideo {
+  width: 95%;
+  margin: 0 auto;
+  height: 30rem;
+  overflow: hidden;
+  border-radius: 1rem;
+  video {
+    width: 100%;
+  }
+}
+
+.products {
+  padding: 4%;
+  .title {
+    text-align: center;
+    h2 {
+      font-family: @signature-font;
+      font-size: 5rem;
+      font-weight: 400;
+      text-transform: capitalize;
+      color: @text-color-2;
+    }
+    h1 {
+      font-size: 4rem;
+    }
+  }
+  .product {
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    > div {
+      width: 24%;
+      background-color: @bg-2;
+      padding: 1rem;
+      border-radius: 0.7rem;
+
+      img {
+        width: 100%;
+        border-radius: 0.7rem;
+      }
+      .productName {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0.5rem 0;
+        text-transform: uppercase;
+        div,
+        h3 {
+          font-family: @font-sub;
+
+          font-weight: 400;
+        }
+      }
+      a {
+        background-color: @bg-1;
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding: 0.6rem 0;
+        color: @text-color-3;
+        border-radius: 0.4rem;
+        text-transform: capitalize;
+        transition: @transition;
+        &:hover {
+          background-color: @text-color-3;
+          color: @bg-2;
+        }
+      }
+    }
+  }
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4% @body-lr-padding;
+
+  .img {
+    margin-right: 2%;
+    img {
+      width: 100%;
+      border-radius: 1rem;
+    }
+  }
+  .text {
+    text-align: center;
+    padding: 2%;
+    h2 {
+      font-family: @signature-font;
+      font-size: 5rem;
+      text-transform: capitalize;
+      font-weight: 400;
+      color: @text-color-2;
+    }
+    h1 {
+      font-size: 5rem;
+      text-transform: capitalize;
+    }
+    p {
+      margin: 2rem 0 3rem;
+    }
+    a {
+      padding: 0.7rem 0.8rem;
+      color: @text-color-2;
+      border: 0.01rem solid @text-color-2;
+      border-radius: 50%;
+      transition: @transition;
+      &:hover {
+        background-color: @text-color-2;
+        color: @bg-1;
+      }
+    }
+  }
+}
+
+.slider {
+  width: 100%;
+  height: 20em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 @body-lr-padding;
+  margin: 4% 0 @body-lr-padding 0;
+  .card {
+    width: 30%;
+    background-color: @bg-2;
+    padding: 1em;
+    border-radius: 1em;
+    img {
+      width: 15%;
+      border-radius: 50%;
+    }
+    p {
+      margin: 0.5em 0;
+    }
+    h4 {
+      text-transform: capitalize;
+    }
+  }
+}
+
+.skin-blog {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  > h1 {
+    font-size: 4em;
+  }
+
+  .blog {
+    width: 95%;
+    margin: 2% 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    img {
+      width: 23%;
+      margin: 0 1em;
+    }
+    div {
+      p {
+        margin: 1em 0 2em;
+      }
+
+      a {
+        padding: 0.7rem 0.8rem;
+        color: @text-color-2;
+        border: 0.01rem solid @text-color-2;
+        border-radius: 50%;
+        transition: @transition;
+        &:hover {
+          background-color: @text-color-2;
+          color: @bg-1;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  .footer {
+    width: 97%;
+    background-color: @bg-2;
+    margin: 1em 0 3em;
+    border-radius: 1em;
+    display: flex;
+    justify-content: space-between;
+    padding: 4%;
+    gap: 0.5em;
+
+    div {
+      display: flex;
+      flex-direction: column;
+    }
+    div:nth-child(1) {
+      p {
+        margin: 0.5em 0;
+      }
+      span {
+        a {
+          color: @text-color-2;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    div:nth-child(2) {
+      ul {
+        li {
+          margin: 0.5em 0;
+          a {
+            color: @text-color-3;
+            text-transform: capitalize;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+    div:nth-child(3) {
+      ul {
+        margin-top: 2.5em;
+        li {
+          margin: 0.5em 0;
+          a {
+            color: @text-color-3;
+            text-transform: capitalize;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+    div:nth-child(4) {
+      a {
+        color: @text-color-2;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      span {
+        margin: 0.5em 0;
+        color: @text-color-3;
+      }
+    }
+    div:nth-child(5) {
+      span {
+        margin: 0.5em 0 0;
+      }
+      ul {
+        display: flex;
+        align-items: center;
+        margin-top: 1em;
+        li {
+          margin: 0 0.5em;
+        }
+      }
+    }
+  }
+}
+
+// Mediaquaries
+@media screen and (max-width: 1024px) {
+  nav {
+    .navheading {
+      flex-direction: column;
+      .navtext {
+        width: 100%;
+      }
+      .navimg {
+        width: 100%;
+        img {
+          margin-top: 7%;
+        }
+      }
+    }
+  }
+  .skincare {
+    flex-direction: column;
+
+    .left {
+      width: 100%;
+
+      img:nth-child(1) {
+        display: none;
+      }
+      img:nth-child(2) {
+        width: 100%;
+      }
+    }
+    .middle {
+      width: 100%;
+      margin: 1em 0;
+    }
+    .right {
+      width: 100%;
+      img:nth-child(1) {
+        width: 70%;
+      }
+    }
+  }
+  .products {
+    .product {
+      flex-wrap: wrap;
+
+      > div {
+        width: 32%;
+        margin: 1% 0;
+      }
+    }
+  }
+  .feature {
+    flex-direction: column;
+  }
+  .slider {
+    flex-direction: column;
+    height: auto;
+    .card {
+      width: 100%;
+      margin: 1% 0;
+    }
+  }
+  .skin-blog {
+    .blog {
+      flex-direction: column;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    .navbar {
+      .navlinks {
+        .menu {
+          position: absolute;
+          top: 3%;
+          right: 1%;
+          width: 2em;
+          height: 1px;
+          box-shadow: 3px 8px 0 0 @text-color-1;
+          background-color: @text-color-1;
+        }
+        ul {
+          position: absolute;
+          top: 8%;
+          right: 1%;
+          border-radius: 1em;
+          padding: 1em 2em;
+          flex-direction: column;
+          width: 30%;
+          background-color: @bg-2;
+          display: none;
+
+          li {
+            margin: 1em 0;
+          }
+        }
+      }
+    }
+    // .cart {
+    //   display: none;
+    // }
+
+    // .navheading {
+    //   // .navtext {
+    //   //   width: 100%;
+    //   // }
+    //   .navimg {
+    //     width: 100%;
+    //     img {
+    //       margin-top: 2em;
+    //     }
+    //   }
+    // }
+  }
+  // .skincare {
+  //   .left {
+  //     width: 100%;
+
+  //     img:nth-child(1) {
+  //       display: none;
+  //     }
+  //     img:nth-child(2) {
+  //       width: 100%;
+  //     }
+  //   }
+  //   .middle {
+  //     width: 100%;
+  //     margin: 1em 0;
+  //   }
+  //   .right {
+  //     width: 100%;
+  //     img:nth-child(1) {
+  //       width: 70%;
+  //     }
+  //   }
+  // }
+
+  .skinCareVideo {
+    height: 20rem;
+  }
+
+  .products {
+    .product {
+      // flex-wrap: wrap;
+      > div {
+        // width: 48%;
+        // margin: 1em 0;
+        .productName {
+          font-size: 0.7em;
+          flex-direction: column;
+          align-items: flex-start;
+          > div {
+            h3 {
+              margin: 3% 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  // .feature {
+  //   flex-direction: column;
+  // }
+  // .slider {
+  //   // flex-direction: column;
+  //   // height: auto;
+  //   .card {
+  //     width: 100%;
+  //     margin: 1em 0;
+  //   }
+  // }
+  .skin-blog {
+    .blog {
+      // flex-direction: column;
+      gap: 2em;
+    }
+  }
+  footer {
+    .footer {
+      flex-direction: column;
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  nav {
+    .navbar {
+      .cart {
+        margin-right: 5%;
+      }
+      .navlinks {
+        ul {
+          width: 45%;
+        }
+      }
+    }
+    .navheading {
+      .navtext {
+        h1 {
+          font-size: 3rem;
+        }
+      }
+    }
+  }
+  .skincare {
+    .middle {
+      h1 {
+        font-size: 2rem;
+      }
+      h6 {
+        font-size: 3rem;
+      }
+    }
+    .right {
+      img:nth-child(2) {
+        margin: 0;
+      }
+      img {
+        margin: 1rem 0;
+      }
+    }
+  }
+  .skinCareVideo {
+    height: 12rem;
+  }
+  .products {
+    .title {
+      h2 {
+        font-size: 3rem;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+    }
+    .product {
+      > div {
+        width: 49%;
+        margin: 2% 0;
+        h3 {
+          font-size: 0.7rem;
+        }
+      }
+    }
+  }
+  .feature {
+    .text {
+      h2 {
+        font-size: 3rem;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  }
+  .slider {
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      img {
+        width: 40%;
+      }
+    }
+  }
+  .skin-blog {
+    > h1 {
+      font-size: 2rem;
+    }
+  }
+  footer {
+    .footer {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  nav {
+    .navheading {
+      .navtext {
+        h1 {
+          font-size: 2rem;
+        }
+        .text {
+          margin-bottom: 2rem;
+        }
+      }
+    }
+  }
+  .skinCareVideo {
+    height: 9rem;
+  }
+  .products {
+    .product {
+      > div {
+        width: 100%;
+        .productName {
+          flex-direction: row;
+        }
+        h3 {
+          font-size: 0.75rem;
+        }
+      }
+    }
+  }
+  .feature {
+    .img {
+      margin: 0;
+    }
+  }
+}

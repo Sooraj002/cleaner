@@ -1,0 +1,645 @@
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lato/v23/S6u9w4BMUTPHh7USew8.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lato/v23/S6uyw4BMUTPHvxk.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playfairdisplay/v30/nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_qiTbtY.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playfairdisplay/v30/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKdFvUDQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playfairdisplay/v30/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKd3vUDQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playfairdisplay/v30/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKebukDQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playfairdisplay/v30/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKeiukDQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Fleur De Leah';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/fleurdeleah/v7/AYCNpXX7ftYZWLhv9UmPJTMC5vY.ttf) format('truetype');
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  border: none;
+  list-style: none;
+  font-family: "Playfair Display", serif;
+}
+p {
+  line-height: 1.5;
+}
+p,
+span,
+a {
+  font-family: "Lato", sans-serif;
+}
+body {
+  background-color: #f1ebe7;
+}
+html {
+  scroll-behavior: smooth;
+}
+nav {
+  padding: 0 8%;
+}
+nav .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+}
+nav .navbar .logo a {
+  color: #000;
+  text-transform: capitalize;
+}
+nav .navbar .navlinks ul {
+  display: flex;
+}
+nav .navbar .navlinks ul li {
+  margin: 0 2rem;
+}
+nav .navbar .navlinks ul li a {
+  color: #333;
+  font-size: 1.2rem;
+  font-family: "Playfair Display", serif;
+  transition: 0.4s ease;
+}
+nav .navbar .navlinks ul li a:hover {
+  color: #000;
+}
+nav .navbar .cart {
+  display: flex;
+  align-items: center;
+}
+nav .navbar .cart a span {
+  padding: 6px 11px;
+  border-radius: 50%;
+  background-color: #e7ded8;
+}
+nav .navheading {
+  margin-top: 8%;
+  display: flex;
+  justify-content: space-between;
+}
+nav .navheading .navtext {
+  width: 50%;
+}
+nav .navheading .navtext h1 {
+  text-transform: capitalize;
+  font-size: 5rem;
+}
+nav .navheading .navtext .text {
+  margin-bottom: 4rem;
+}
+nav .navheading .navtext a {
+  width: 9rem;
+  padding: 0.8rem 1.3rem;
+  color: #68513f;
+  border: 0.01rem solid #68513f;
+  border-radius: 60%;
+  transition: 0.4s ease;
+}
+nav .navheading .navtext a:hover {
+  background-color: #68513f;
+  color: #f1ebe7;
+}
+nav .navheading .navimg {
+  width: 50%;
+}
+nav .navheading .navimg img {
+  border-radius: 1rem;
+  width: 100%;
+  height: 100%;
+}
+.skincare {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3% 8%;
+}
+.skincare .left {
+  width: 25%;
+}
+.skincare .left img:nth-child(1) {
+  width: 50%;
+  justify-self: center;
+  margin-bottom: 20rem;
+}
+.skincare .left img {
+  width: 80%;
+  border-radius: 2rem;
+}
+.skincare .middle {
+  width: 50%;
+  text-align: center;
+  padding: 0 1rem;
+}
+.skincare .middle h1 {
+  font-size: 4rem;
+}
+.skincare .middle h6 {
+  font-size: 6rem;
+  font-family: "Fleur De Leah", cursive;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: #68513f;
+}
+.skincare .middle p {
+  margin: 3rem 0 5rem;
+}
+.skincare .middle a {
+  padding: 0.8rem 1.5rem;
+  color: #68513f;
+  border: 0.01rem solid #68513f;
+  border-radius: 50%;
+  transition: 0.4s ease;
+}
+.skincare .middle a:hover {
+  background-color: #68513f;
+  color: #f1ebe7;
+}
+.skincare .right {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.skincare .right img:nth-child(1) {
+  width: 50%;
+}
+.skincare .right img:nth-child(2) {
+  width: 70%;
+  align-self: flex-start;
+  margin: 3rem 0 8rem;
+}
+.skincare .right img {
+  width: 60%;
+  border-radius: 2rem;
+  margin: 2rem 0;
+}
+.skinCareVideo {
+  width: 95%;
+  margin: 0 auto;
+  height: 30rem;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+.skinCareVideo video {
+  width: 100%;
+}
+.products {
+  padding: 4%;
+}
+.products .title {
+  text-align: center;
+}
+.products .title h2 {
+  font-family: "Fleur De Leah", cursive;
+  font-size: 5rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: #68513f;
+}
+.products .title h1 {
+  font-size: 4rem;
+}
+.products .product {
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.products .product > div {
+  width: 24%;
+  background-color: #e7ded8;
+  padding: 1rem;
+  border-radius: 0.7rem;
+}
+.products .product > div img {
+  width: 100%;
+  border-radius: 0.7rem;
+}
+.products .product > div .productName {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+  text-transform: uppercase;
+}
+.products .product > div .productName div,
+.products .product > div .productName h3 {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+.products .product > div a {
+  background-color: #f1ebe7;
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding: 0.6rem 0;
+  color: #333;
+  border-radius: 0.4rem;
+  text-transform: capitalize;
+  transition: 0.4s ease;
+}
+.products .product > div a:hover {
+  background-color: #333;
+  color: #e7ded8;
+}
+.feature {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4% 8%;
+}
+.feature .img {
+  margin-right: 2%;
+}
+.feature .img img {
+  width: 100%;
+  border-radius: 1rem;
+}
+.feature .text {
+  text-align: center;
+  padding: 2%;
+}
+.feature .text h2 {
+  font-family: "Fleur De Leah", cursive;
+  font-size: 5rem;
+  text-transform: capitalize;
+  font-weight: 400;
+  color: #68513f;
+}
+.feature .text h1 {
+  font-size: 5rem;
+  text-transform: capitalize;
+}
+.feature .text p {
+  margin: 2rem 0 3rem;
+}
+.feature .text a {
+  padding: 0.7rem 0.8rem;
+  color: #68513f;
+  border: 0.01rem solid #68513f;
+  border-radius: 50%;
+  transition: 0.4s ease;
+}
+.feature .text a:hover {
+  background-color: #68513f;
+  color: #f1ebe7;
+}
+.slider {
+  width: 100%;
+  height: 20em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8%;
+  margin: 4% 0 8% 0;
+}
+.slider .card {
+  width: 30%;
+  background-color: #e7ded8;
+  padding: 1em;
+  border-radius: 1em;
+}
+.slider .card img {
+  width: 15%;
+  border-radius: 50%;
+}
+.slider .card p {
+  margin: 0.5em 0;
+}
+.slider .card h4 {
+  text-transform: capitalize;
+}
+.skin-blog {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.skin-blog > h1 {
+  font-size: 4em;
+}
+.skin-blog .blog {
+  width: 95%;
+  margin: 2% 0 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.skin-blog .blog img {
+  width: 23%;
+  margin: 0 1em;
+}
+.skin-blog .blog div p {
+  margin: 1em 0 2em;
+}
+.skin-blog .blog div a {
+  padding: 0.7rem 0.8rem;
+  color: #68513f;
+  border: 0.01rem solid #68513f;
+  border-radius: 50%;
+  transition: 0.4s ease;
+}
+.skin-blog .blog div a:hover {
+  background-color: #68513f;
+  color: #f1ebe7;
+}
+footer {
+  display: flex;
+  justify-content: center;
+}
+footer .footer {
+  width: 97%;
+  background-color: #e7ded8;
+  margin: 1em 0 3em;
+  border-radius: 1em;
+  display: flex;
+  justify-content: space-between;
+  padding: 4%;
+  gap: 0.5em;
+}
+footer .footer div {
+  display: flex;
+  flex-direction: column;
+}
+footer .footer div:nth-child(1) p {
+  margin: 0.5em 0;
+}
+footer .footer div:nth-child(1) span a {
+  color: #68513f;
+}
+footer .footer div:nth-child(1) span a:hover {
+  text-decoration: underline;
+}
+footer .footer div:nth-child(2) ul li {
+  margin: 0.5em 0;
+}
+footer .footer div:nth-child(2) ul li a {
+  color: #333;
+  text-transform: capitalize;
+}
+footer .footer div:nth-child(2) ul li a:hover {
+  text-decoration: underline;
+}
+footer .footer div:nth-child(3) ul {
+  margin-top: 2.5em;
+}
+footer .footer div:nth-child(3) ul li {
+  margin: 0.5em 0;
+}
+footer .footer div:nth-child(3) ul li a {
+  color: #333;
+  text-transform: capitalize;
+}
+footer .footer div:nth-child(3) ul li a:hover {
+  text-decoration: underline;
+}
+footer .footer div:nth-child(4) a {
+  color: #68513f;
+}
+footer .footer div:nth-child(4) a:hover {
+  text-decoration: underline;
+}
+footer .footer div:nth-child(4) span {
+  margin: 0.5em 0;
+  color: #333;
+}
+footer .footer div:nth-child(5) span {
+  margin: 0.5em 0 0;
+}
+footer .footer div:nth-child(5) ul {
+  display: flex;
+  align-items: center;
+  margin-top: 1em;
+}
+footer .footer div:nth-child(5) ul li {
+  margin: 0 0.5em;
+}
+@media screen and (max-width: 1024px) {
+  nav .navheading {
+    flex-direction: column;
+  }
+  nav .navheading .navtext {
+    width: 100%;
+  }
+  nav .navheading .navimg {
+    width: 100%;
+  }
+  nav .navheading .navimg img {
+    margin-top: 7%;
+  }
+  .skincare {
+    flex-direction: column;
+  }
+  .skincare .left {
+    width: 100%;
+  }
+  .skincare .left img:nth-child(1) {
+    display: none;
+  }
+  .skincare .left img:nth-child(2) {
+    width: 100%;
+  }
+  .skincare .middle {
+    width: 100%;
+    margin: 1em 0;
+  }
+  .skincare .right {
+    width: 100%;
+  }
+  .skincare .right img:nth-child(1) {
+    width: 70%;
+  }
+  .products .product {
+    flex-wrap: wrap;
+  }
+  .products .product > div {
+    width: 32%;
+    margin: 1% 0;
+  }
+  .feature {
+    flex-direction: column;
+  }
+  .slider {
+    flex-direction: column;
+    height: auto;
+  }
+  .slider .card {
+    width: 100%;
+    margin: 1% 0;
+  }
+  .skin-blog .blog {
+    flex-direction: column;
+  }
+  .skin-blog .blog img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  nav .navbar .navlinks .menu {
+    position: absolute;
+    top: 3%;
+    right: 1%;
+    width: 2em;
+    height: 1px;
+    box-shadow: 3px 8px 0 0 #000;
+    background-color: #000;
+  }
+  nav .navbar .navlinks ul {
+    position: absolute;
+    top: 8%;
+    right: 1%;
+    border-radius: 1em;
+    padding: 1em 2em;
+    flex-direction: column;
+    width: 30%;
+    background-color: #e7ded8;
+    display: none;
+  }
+  nav .navbar .navlinks ul li {
+    margin: 1em 0;
+  }
+  .skinCareVideo {
+    height: 20rem;
+  }
+  .products .product > div .productName {
+    font-size: 0.7em;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .products .product > div .productName > div h3 {
+    margin: 3% 0;
+  }
+  .skin-blog .blog {
+    gap: 2em;
+  }
+  footer .footer {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 425px) {
+  nav .navbar .cart {
+    margin-right: 5%;
+  }
+  nav .navbar .navlinks ul {
+    width: 45%;
+  }
+  nav .navheading .navtext h1 {
+    font-size: 3rem;
+  }
+  .skincare .middle h1 {
+    font-size: 2rem;
+  }
+  .skincare .middle h6 {
+    font-size: 3rem;
+  }
+  .skincare .right img:nth-child(2) {
+    margin: 0;
+  }
+  .skincare .right img {
+    margin: 1rem 0;
+  }
+  .skinCareVideo {
+    height: 12rem;
+  }
+  .products .title h2 {
+    font-size: 3rem;
+  }
+  .products .title h1 {
+    font-size: 2rem;
+  }
+  .products .product > div {
+    width: 49%;
+    margin: 2% 0;
+  }
+  .products .product > div h3 {
+    font-size: 0.7rem;
+  }
+  .feature .text h2 {
+    font-size: 3rem;
+  }
+  .feature .text h1 {
+    font-size: 2rem;
+  }
+  .slider .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .slider .card img {
+    width: 40%;
+  }
+  .skin-blog > h1 {
+    font-size: 2rem;
+  }
+  footer .footer {
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  nav .navheading .navtext h1 {
+    font-size: 2rem;
+  }
+  nav .navheading .navtext .text {
+    margin-bottom: 2rem;
+  }
+  .skinCareVideo {
+    height: 9rem;
+  }
+  .products .product > div {
+    width: 100%;
+  }
+  .products .product > div .productName {
+    flex-direction: row;
+  }
+  .products .product > div h3 {
+    font-size: 0.75rem;
+  }
+  .feature .img {
+    margin: 0;
+  }
+}
