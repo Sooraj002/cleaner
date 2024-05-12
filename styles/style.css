@@ -1,3 +1,11 @@
+body {
+  --text: #f5e9e8;
+  --background: #140707;
+  --primary: #e38c87;
+  --secondary: #be3831;
+  --accent: #f03a30;
+}
+
 @font-face {
   font-family: "Lato";
   font-style: normal;
@@ -73,6 +81,7 @@
   border: none;
   list-style: none;
   font-family: "Playfair Display", serif;
+  color: white;
 }
 p {
   line-height: 1.5;
@@ -81,9 +90,11 @@ p,
 span,
 a {
   font-family: "Lato", sans-serif;
+  color: white;
 }
 body {
-  background-color: #f1ebe7;
+  background-color: #000000;
+  color: white;
 }
 html {
   scroll-behavior: smooth;
@@ -108,14 +119,11 @@ nav .navbar .navlinks ul li {
   margin: 0 2rem;
 }
 nav .navbar .navlinks ul li a {
-  color: #333;
   font-size: 1.2rem;
   font-family: "Playfair Display", serif;
   transition: 0.4s ease;
 }
-nav .navbar .navlinks ul li a:hover {
-  color: #000;
-}
+
 nav .navbar .cart {
   display: flex;
   align-items: center;
@@ -123,7 +131,7 @@ nav .navbar .cart {
 nav .navbar .cart a span {
   padding: 6px 11px;
   border-radius: 50%;
-  background-color: #e7ded8;
+  background-color: var(--secondary);
 }
 nav .navheading {
   margin-top: 8%;
@@ -143,13 +151,13 @@ nav .navheading .navtext .text {
 nav .navheading .navtext a {
   width: 9rem;
   padding: 0.8rem 1.3rem;
-  color: #68513f;
-  border: 0.01rem solid #68513f;
+  color: var(--secondary);
+  border: 0.01rem solid var(--secondary);
   border-radius: 60%;
   transition: 0.4s ease;
 }
 nav .navheading .navtext a:hover {
-  background-color: #68513f;
+  background-color: var(--secondary);
   color: #f1ebe7;
 }
 nav .navheading .navimg {
@@ -160,80 +168,80 @@ nav .navheading .navimg img {
   width: 100%;
   height: 100%;
 }
-.skincare {
+.container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 3% 8%;
 }
-.skincare .left {
+.container .left {
   width: 25%;
 }
-.skincare .left img:nth-child(1) {
+.container .left img:nth-child(1) {
   width: 50%;
   justify-self: center;
   margin-bottom: 20rem;
 }
-.skincare .left img {
+.container .left img {
   width: 80%;
   border-radius: 2rem;
 }
-.skincare .middle {
+.container .middle {
   width: 50%;
   text-align: center;
   padding: 0 1rem;
 }
-.skincare .middle h1 {
+.container .middle h1 {
   font-size: 4rem;
 }
-.skincare .middle h6 {
+.container .middle h6 {
   font-size: 6rem;
   font-family: "Fleur De Leah", cursive;
   font-weight: 400;
   text-transform: capitalize;
-  color: #68513f;
+  color: var(--secondary);
 }
-.skincare .middle p {
+.container .middle p {
   margin: 3rem 0 5rem;
 }
-.skincare .middle a {
+.container .middle a {
   padding: 0.8rem 1.5rem;
-  color: #68513f;
-  border: 0.01rem solid #68513f;
+  color: var(--secondary);
+  border: 0.01rem solid var(--secondary);
   border-radius: 50%;
   transition: 0.4s ease;
 }
-.skincare .middle a:hover {
-  background-color: #68513f;
+.container .middle a:hover {
+  background-color: var(--secondary);
   color: #f1ebe7;
 }
-.skincare .right {
+.container .right {
   width: 25%;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
-.skincare .right img:nth-child(1) {
+.container .right img:nth-child(1) {
   width: 50%;
 }
-.skincare .right img:nth-child(2) {
+.container .right img:nth-child(2) {
   width: 70%;
   align-self: flex-start;
   margin: 3rem 0 8rem;
 }
-.skincare .right img {
+.container .right img {
   width: 60%;
   border-radius: 2rem;
   margin: 2rem 0;
 }
-.skinCareVideo {
+.containerVideo {
   width: 95%;
   margin: 0 auto;
   height: 30rem;
   overflow: hidden;
   border-radius: 1rem;
 }
-.skinCareVideo video {
+.containerVideo video {
   width: 100%;
 }
 .products {
@@ -247,7 +255,7 @@ nav .navheading .navimg img {
   font-size: 5rem;
   font-weight: 400;
   text-transform: capitalize;
-  color: #68513f;
+  color: var(--secondary);
 }
 .products .title h1 {
   font-size: 4rem;
@@ -260,7 +268,7 @@ nav .navheading .navimg img {
 }
 .products .product > div {
   width: 24%;
-  background-color: #e7ded8;
+  background-color: var(--secondary);
   padding: 1rem;
   border-radius: 0.7rem;
 }
@@ -281,19 +289,17 @@ nav .navheading .navimg img {
   font-weight: 400;
 }
 .products .product > div a {
-  background-color: #f1ebe7;
+  background-color: black;
   width: 100%;
   display: block;
   text-align: center;
   padding: 0.6rem 0;
-  color: #333;
   border-radius: 0.4rem;
   text-transform: capitalize;
   transition: 0.4s ease;
 }
 .products .product > div a:hover {
-  background-color: #333;
-  color: #e7ded8;
+  color: var(--secondary);
 }
 .feature {
   display: flex;
@@ -317,7 +323,7 @@ nav .navheading .navimg img {
   font-size: 5rem;
   text-transform: capitalize;
   font-weight: 400;
-  color: #68513f;
+  color: var(--secondary);
 }
 .feature .text h1 {
   font-size: 5rem;
@@ -328,13 +334,13 @@ nav .navheading .navimg img {
 }
 .feature .text a {
   padding: 0.7rem 0.8rem;
-  color: #68513f;
-  border: 0.01rem solid #68513f;
+  color: var(--secondary);
+  border: 0.01rem solid var(--secondary);
   border-radius: 50%;
   transition: 0.4s ease;
 }
 .feature .text a:hover {
-  background-color: #68513f;
+  background-color: var(--secondary);
   color: #f1ebe7;
 }
 .slider {
@@ -348,7 +354,7 @@ nav .navheading .navimg img {
 }
 .slider .card {
   width: 30%;
-  background-color: #e7ded8;
+  background-color: var(--secondary);
   padding: 1em;
   border-radius: 1em;
 }
@@ -387,13 +393,13 @@ nav .navheading .navimg img {
 }
 .skin-blog .blog div a {
   padding: 0.7rem 0.8rem;
-  color: #68513f;
-  border: 0.01rem solid #68513f;
+  color: var(--secondary);
+  border: 0.01rem solid var(--secondary);
   border-radius: 50%;
   transition: 0.4s ease;
 }
 .skin-blog .blog div a:hover {
-  background-color: #68513f;
+  background-color: var(--secondary);
   color: #f1ebe7;
 }
 footer {
@@ -402,7 +408,7 @@ footer {
 }
 footer .footer {
   width: 97%;
-  background-color: #e7ded8;
+  background-color: var(--secondary);
   margin: 1em 0 3em;
   border-radius: 1em;
   display: flex;
@@ -418,7 +424,7 @@ footer .footer div:nth-child(1) p {
   margin: 0.5em 0;
 }
 footer .footer div:nth-child(1) span a {
-  color: #68513f;
+  color: var(--secondary);
 }
 footer .footer div:nth-child(1) span a:hover {
   text-decoration: underline;
@@ -426,13 +432,7 @@ footer .footer div:nth-child(1) span a:hover {
 footer .footer div:nth-child(2) ul li {
   margin: 0.5em 0;
 }
-footer .footer div:nth-child(2) ul li a {
-  color: #333;
-  text-transform: capitalize;
-}
-footer .footer div:nth-child(2) ul li a:hover {
-  text-decoration: underline;
-}
+
 footer .footer div:nth-child(3) ul {
   margin-top: 2.5em;
 }
@@ -440,21 +440,19 @@ footer .footer div:nth-child(3) ul li {
   margin: 0.5em 0;
 }
 footer .footer div:nth-child(3) ul li a {
-  color: #333;
   text-transform: capitalize;
 }
 footer .footer div:nth-child(3) ul li a:hover {
   text-decoration: underline;
 }
 footer .footer div:nth-child(4) a {
-  color: #68513f;
+  color: var(--secondary);
 }
 footer .footer div:nth-child(4) a:hover {
   text-decoration: underline;
 }
 footer .footer div:nth-child(4) span {
   margin: 0.5em 0;
-  color: #333;
 }
 footer .footer div:nth-child(5) span {
   margin: 0.5em 0 0;
@@ -480,26 +478,26 @@ footer .footer div:nth-child(5) ul li {
   nav .navheading .navimg img {
     margin-top: 7%;
   }
-  .skincare {
+  .container {
     flex-direction: column;
   }
-  .skincare .left {
+  .container .left {
     width: 100%;
   }
-  .skincare .left img:nth-child(1) {
+  .container .left img:nth-child(1) {
     display: none;
   }
-  .skincare .left img:nth-child(2) {
+  .container .left img:nth-child(2) {
     width: 100%;
   }
-  .skincare .middle {
+  .container .middle {
     width: 100%;
     margin: 1em 0;
   }
-  .skincare .right {
+  .container .right {
     width: 100%;
   }
-  .skincare .right img:nth-child(1) {
+  .container .right img:nth-child(1) {
     width: 70%;
   }
   .products .product {
@@ -545,13 +543,13 @@ footer .footer div:nth-child(5) ul li {
     padding: 1em 2em;
     flex-direction: column;
     width: 30%;
-    background-color: #e7ded8;
+    background-color: var(--secondary);
     display: none;
   }
   nav .navbar .navlinks ul li {
     margin: 1em 0;
   }
-  .skinCareVideo {
+  .containerVideo {
     height: 20rem;
   }
   .products .product > div .productName {
@@ -579,19 +577,19 @@ footer .footer div:nth-child(5) ul li {
   nav .navheading .navtext h1 {
     font-size: 3rem;
   }
-  .skincare .middle h1 {
+  .container .middle h1 {
     font-size: 2rem;
   }
-  .skincare .middle h6 {
+  .container .middle h6 {
     font-size: 3rem;
   }
-  .skincare .right img:nth-child(2) {
+  .container .right img:nth-child(2) {
     margin: 0;
   }
-  .skincare .right img {
+  .container .right img {
     margin: 1rem 0;
   }
-  .skinCareVideo {
+  .containerVideo {
     height: 12rem;
   }
   .products .title h2 {
@@ -635,7 +633,7 @@ footer .footer div:nth-child(5) ul li {
   nav .navheading .navtext .text {
     margin-bottom: 2rem;
   }
-  .skinCareVideo {
+  .containerVideo {
     height: 9rem;
   }
   .products .product > div {
